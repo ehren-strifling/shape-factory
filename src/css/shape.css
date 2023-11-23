@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.display-shape { /* These styles are a mess... Sorry. */
+	margin-top:24px;
+	width: 100%;
+	max-width:536.25px;
+	min-height:429px;
+	background-color: #404046;
+	border: 3px;
+	padding: 3px;
+
+	flex-wrap: wrap;
+	gap:4px;
+	justify-content: center;
+	align-items: center;
+}
+
+.shape {
+	margin:4px;
+	width: 92px;
+	height: 92px;
+	display:inline-block;
+	flex-shrink: 0;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+.square {
+	border-radius:5px;
+}
+
+.arc {
+	border-radius:5px;
+	border-top-left-radius: 100%;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Ehren Strifling">
+	<meta name="keywords" content="Shape-Factory">
+	<title>Shape Factory</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<link rel="stylesheet" href="./src/css/index.css">
+
+	<script src="src/scripts/index.js" defer type="module"></script>
+</head>
+<body class="center">
+	<datalist id="colour-names">
+	</datalist>
+	<main>
+		<header><h1>Shape Factory</h1></header>
+		<div class="create-shape">
+			<input type="text" class="colour-names" value="red" list="colour-names">
+			<select value="circle" class="shape-names">
+			</select>
+			<button class="create-button">Create!</button>
+		</div>
+		<div class="display-shape flex">
+		</div>
+		<p class="message">message</p>
+	</main>
+</body>
+</html>
