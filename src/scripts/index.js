@@ -63,7 +63,7 @@ function createShape(e) {
 	let colour = getColour(e.target.parentElement.querySelector(".colour-names").value);
 
 	if (colour===null) {
-		setMessage(`Invalid color`, true);
+		setMessage(`Invalid colour`, true);
 		return;
 	}
 
