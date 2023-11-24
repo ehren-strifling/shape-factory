@@ -11,7 +11,10 @@ const colours = [
 	new Colour("cyan", "#00ffff"),
 	new Colour("blue", "#0000ff"),
 	new Colour("purple", "#ff00ff"),
+	new Colour("pink", "#FFC0CB"),
+	new Colour("brown", "#964B00"),
 	new Colour("white", "#ffffff"),
+	new Colour("gray", "#808080"),
 	new Colour("black", "#000000")
 ];
 
