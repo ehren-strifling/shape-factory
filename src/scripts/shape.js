@@ -28,6 +28,10 @@ class Shape {
 	get colourHex() {
 		return this._colour.hex;
 	}
+
+	getInfo() {
+		return `${this.colourName} ${this.type}`;
+	}
 	// destroy() { //actually, the shape class will not be responsible for the html element
 
 	// }

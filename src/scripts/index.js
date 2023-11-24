@@ -5,13 +5,15 @@ import Colour from "./colour.js";
 
 const colours = [
 	new Colour("red", "#ff0000"),
-	new Colour("orange", "#ffa000"),
+	new Colour("orange", "#ff9000"),
 	new Colour("yellow", "#ffff00"),
 	new Colour("green", "#00ff00"),
 	new Colour("cyan", "#00ffff"),
 	new Colour("blue", "#0000ff"),
-	new Colour("purple", "#ff00ff"),
-	new Colour("pink", "#FFC0CB"),
+	new Colour("purple", "#9000ff"),
+	new Colour("magenta", "#ff00ff"),
+	new Colour("pink", "#FF0090"),
+	new Colour("rose", "#FF9090"),
 	new Colour("brown", "#964B00"),
 	new Colour("white", "#ffffff"),
 	new Colour("gray", "#808080"),
@@ -73,7 +75,7 @@ function createShape(e) {
 			element.classList.add(`${shapes[shapeCount].type}`);
 			element.style.backgroundColor = shapes[shapeCount].colourHex;
 		});
-		setMessage(`${shapes[shapeCount].colourName} ${shapes[shapeCount].type} created successfully`);
+		setMessage(`${shapes[shapeCount].getInfo()} created successfully`);
 		shapeCount++;
 	} else {
 		setMessage(`Not enough room to add shape`, true);
@@ -119,7 +121,7 @@ function isColor(string) {
 
 function shapeClicked(shapeId) {
 	if (shapeId<shapeCount) {
-		setMessage(`Shape ${shapeId+1}: ${shapes[shapeId].colourName} ${shapes[shapeId].type}`);
+		setMessage(`Shape ${shapeId+1}: ${shapes[shapeId].getInfo()}`);
 	}
 }
 
