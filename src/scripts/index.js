@@ -70,8 +70,10 @@ function createShape(e) {
 			element.classList.add(`${shapes[shapeCount].type}`);
 			element.style.backgroundColor = shapes[shapeCount].colourHex;
 		});
-		setMessage(`${shapes[shapeCount].colourName} ${shapes[shapeCount].type} added successfully`);
+		setMessage(`${shapes[shapeCount].colourName} ${shapes[shapeCount].type} created successfully`);
 		shapeCount++;
+	} else {
+		setMessage(`Not enough room to add shape`, true);
 	}
 }
 
